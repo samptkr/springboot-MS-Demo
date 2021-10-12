@@ -11,4 +11,8 @@ micro-services:
     companyService:
          endpoints:
              endpoint:
-                 url: http://EMPLOYEE-SERVICE/employee/getAllByCompId/
+                 url: lb://COMPANY-SERVICE/
+    employeeService:
+         endpoints:
+             endpoint:
+                 url: http://EMPLOYEE-SERVICE/employee/getAllEmp/
