@@ -7,4 +7,16 @@ eureka:
         service-url:
             defaultZone: http://localhost:9093/eureka/
             
+micro-services:
+    employee-service:
+        endpoints:
+            endpoint:
+               base-url: lb://EMPLOYEE-SERVICE
+               url: http://EMPLOYEE-SERVICE/employee/getAllByCompId/
+    company-service:
+        endpoints:
+            endpoint:
+               base-url: lb://COMPANY-SERVICE
+               url: http://COMPANY-SERVICE/company/getById/
+            
             
