@@ -6,3 +6,9 @@ eureka:
         fetch-registry: true
         service-url:
             defaultZone: http://localhost:9093/eureka/
+            
+micro-services:
+    companyService:
+         endpoints:
+             endpoint:
+                 url: http://EMPLOYEE-SERVICE/employee/getAllByCompId/
